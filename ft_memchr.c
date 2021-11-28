@@ -6,12 +6,11 @@
 /*   By: ddordain <ddordain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 11:48:27 by ddordain          #+#    #+#             */
-/*   Updated: 2021/11/23 11:48:27 by ddordain         ###   ########.fr       */
+/*   Updated: 2021/11/28 13:56:17 by ddordain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
