@@ -46,6 +46,7 @@ static int	fill_tab(char const *s, char c, char **tab)
 			while (i > 0)
 				free(tab[--i]);
 			free(tab);
+			tab = NULL;
 			return (1);
 		}
 		ft_strlcpy(tab[i++], s - len, len + 1);
