@@ -6,7 +6,7 @@
 #    By: ddordain <ddordain@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/25 14:44:10 by ddordain          #+#    #+#              #
-#    Updated: 2021/12/28 15:34:04 by ddordain         ###   ########.fr        #
+#    Updated: 2022/01/10 22:41:59 by ddordain         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,7 @@ SRCS_NBR_DIR = nbr
 SRCS_FD_DIR = fd
 SRCS_LIST_DIR = list
 SRCS_DLIST_DIR = dlist
+SRCS_GNL_DIR = gnl
 
 # OBJS DIR
 OBJS_DIRS_NAME =	$(SRCS_CHAR_DIR) \
@@ -52,7 +53,8 @@ OBJS_DIRS_NAME =	$(SRCS_CHAR_DIR) \
 					$(SRCS_NBR_DIR)	\
 					$(SRCS_FD_DIR)	\
 					$(SRCS_LIST_DIR) \
-					$(SRCS_DLIST_DIR)
+					$(SRCS_DLIST_DIR) \
+					$(SRCS_GNL_DIR)
 
 # OBJS DIRS IN OBJ PATH
 OBJS_DIRS = $(addprefix $(OBJS_PATH)/, $(OBJS_DIRS_NAME))
@@ -121,6 +123,8 @@ SRCS_DLIST =	ft_dlist_data.c \
 				ft_dlist_size.c \
 				ft_dlist_tail.c
 
+SRCS_GNL =	get_next_line.c 
+
 # SRC FILES AND SRCS DIRS
 SRCS_NAME =	$(addprefix $(SRCS_CHAR_DIR)/, $(SRCS_CHAR)) \
 			$(addprefix $(SRCS_STR_DIR)/, $(SRCS_STR)) \
@@ -128,7 +132,8 @@ SRCS_NAME =	$(addprefix $(SRCS_CHAR_DIR)/, $(SRCS_CHAR)) \
 			$(addprefix $(SRCS_NBR_DIR)/, $(SRCS_NBR)) \
 			$(addprefix $(SRCS_FD_DIR)/, $(SRCS_FD)) \
 			$(addprefix $(SRCS_LIST_DIR)/, $(SRCS_LIST)) \
-			$(addprefix $(SRCS_DLIST_DIR)/, $(SRCS_DLIST))
+			$(addprefix $(SRCS_DLIST_DIR)/, $(SRCS_DLIST)) \
+			$(addprefix $(SRCS_GNL_DIR)/, $(SRCS_GNL))
 
 # OBJS NAME
 OBJS_NAME = $(SRCS_NAME:%.c=%.o)

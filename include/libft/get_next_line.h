@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ddordain <ddordain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/23 11:57:43 by ddordain          #+#    #+#             */
-/*   Updated: 2022/01/10 22:39:19 by ddordain         ###   ########.fr       */
+/*   Created: 2022/01/10 22:36:24 by ddordain          #+#    #+#             */
+/*   Updated: 2022/01/10 22:39:48 by ddordain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
+# include <stdlib.h> 
+# include <unistd.h>
+# include <fcntl.h>
 
-/* Non-Standard Libraries */
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 10
+# endif
 
-# include "libft/char.h"
-# include "libft/dlist.h"
-# include "libft/fd.h"
-# include "libft/list.h"
-# include "libft/mem.h"
-# include "libft/nbr.h"
-# include "libft/str.h"
-# include "libft/get_next_line.h"
+/* Main function */
+char	*get_next_line(int fd);
 
 #endif
