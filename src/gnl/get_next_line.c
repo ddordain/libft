@@ -6,14 +6,14 @@
 /*   By: ddordain <ddordain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 22:35:04 by ddordain          #+#    #+#             */
-/*   Updated: 2022/01/10 22:44:20 by ddordain         ###   ########.fr       */
+/*   Updated: 2022/02/22 14:44:42 by ddordain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft/get_next_line.h"
 #include "libft.h"
 
-static char *ft_strjoin_gnl(char *s1, char *s2)
+static char	*ft_strjoin_gnl(char *s1, char *s2)
 {
 	size_t		i;
 	size_t		j;
@@ -133,4 +133,3 @@ char	*get_next_line(int fd)
 	save[fd] = clean_save(save[fd]);
 	return (next_line);
 }
-
